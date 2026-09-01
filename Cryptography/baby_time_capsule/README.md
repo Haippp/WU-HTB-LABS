@@ -40,6 +40,11 @@ def challenge(req):
 
 ```
 
-Nah dari dua analisa tersebut itu mengarahkan pada pola yang bisa di eksploitasi dengan serangan hastad broadcast attack.
+Nah dari dua analisa tersebut itu mengarahkan pada pola yang bisa di eksploitasi dengan serangan _hastad broadcast attack_.
 
 ## 🧩Penyelesaian
+Untuk menyelesaikan challange ini kita perlu mendapatkan 5 buah pasangan n, dan ct yang berbeda beda agar bisa membalikkannya. maka dari itu kita perlu membuat sistem solve dengan algoritma seperti ini:
+1. Sistem mengirimkan Y selama 5x agar bisa mendapatkan pasangan ct, dan n yang berbeda-beda
+2. Setelah mendapatkan nilai tersebut kemudian kita gunakan fungsi _hastad broadcast attack_
+
+Hasil dari algoritma tersebut bisa kalian baca di [solve.py](./solve.py)
